@@ -1,4 +1,7 @@
 @import "_mixins/font-face";
 
-@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
-@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+@include font-face("montserrat", "../fonts/Montserrat-Regular/Montserrat-Regular");
+@include font-face("montserrat", "../fonts/Montserrat-Bold/Montserrat-Bold", bold);
+
+@include font-face("playfair", "../fonts/PlayfairDisplayItalic/PlayfairDisplayItalic", normal, italic);
+
