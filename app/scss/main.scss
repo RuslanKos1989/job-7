@@ -277,6 +277,7 @@ section, header{
 	// height: 600px;
 	box-shadow: 3px 4px 20px 0px rgba(0, 0, 0, .34);
 	padding: 2.5em 3.125em;
+	top: -283px;
 	&__bg{
 		position: absolute;
 		right: -263px;
@@ -288,6 +289,17 @@ section, header{
 		color: rgba(0, 0, 0, .03);
 		transform: rotate(-90deg);
 		text-transform: uppercase;
+	}
+	&::before{
+		content: '';
+		height:100%;
+		position:absolute;
+		width:100%;
+		top:0;
+		left:0;
+		background: $blue;
+		background: linear-gradient(-49deg, white 785.7px, $blue 0);
+		z-index: 0;
 	}
 }
 
@@ -390,8 +402,6 @@ section, header{
 		letter-spacing: 0.2px;
 	}
 }
-
-
 
 
 @import "media"; // Всегда в конце
