@@ -274,8 +274,9 @@ section, header{
 	display: flex;
 	justify-content: space-between;
 	position: relative;
-	height: 600px;
+	// height: 600px;
 	box-shadow: 3px 4px 20px 0px rgba(0, 0, 0, .34);
+	padding: 2.5em 3.125em;
 	&__bg{
 		position: absolute;
 		right: -263px;
@@ -290,11 +291,15 @@ section, header{
 	}
 }
 
+.child-slider{
+	font-size: 1rem;
+	margin-top: 2.5em;
+}
+
 .goods{
 	font-size: 1rem;
 	&__title{
 		margin-bottom: 1.563em;
-		margin-top: 2.5em;
 	}
 	&__h2{
 		font: bold 1.250em montserrat;
@@ -323,6 +328,9 @@ section, header{
 		color: white;
 		background-color: black;
 		padding: .357em .657em;
+
+		position: relative;
+		right: -65px;
 	}
 	&__price-block{
 		margin: 2.188em 0 5em 0;
@@ -375,8 +383,9 @@ section, header{
 	}
 	&__txt{
 		display: block;
-		font: 1em raleway;
+		font: 1em/1.5em raleway;
 		padding-top: .875em;
+		padding-right: 1.875em;
 		color: #787878;
 		letter-spacing: 0.2px;
 	}

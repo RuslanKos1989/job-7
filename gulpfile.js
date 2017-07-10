@@ -28,6 +28,7 @@ gulp.task('js', ['common-js'], function() {
 		return gulp.src([
 				'app/libs/jquery/dist/jquery.min.js',
 				'app/libs/tether/dist/js/tether.js',
+				'app/libs/slider-pro/dist/js/jquery.sliderPro.min.js',
 				'app/js/common.min.js', // Всегда в конце
 				])
 		.pipe(concat('scripts.min.js'))

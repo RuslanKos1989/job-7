@@ -28,9 +28,34 @@ $(function() {
 	};
 
 
-$(document).ready(function(){
+
 	$(".tabs").lightTabs();
-});
 
 
+	$( '#my-slider' ).sliderPro({
+		width: 325,
+		height: 450,
+		arrows: false,
+		buttons: false,
+		waitForLayers: true,
+		fade: true,
+		autoplay: false,
+		autoScaleLayers: false,
+		thumbnailsPosition: 'right',
+		thumbnailPointer: false,
+		thumbnailWidth: 70,
+		thumbnailHeight: 70,
+		breakpoints: {
+			800: {
+				thumbnailsPosition: 'bottom',
+				thumbnailWidth: 70,
+				thumbnailHeight: 70
+			},
+			500: {
+				thumbnailsPosition: 'bottom',
+				thumbnailWidth: 70,
+				thumbnailHeight: 70
+			}
+		}
+	});
 });
