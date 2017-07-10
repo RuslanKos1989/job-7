@@ -5,3 +5,6 @@
 
 @include font-face("playfair", "../fonts/PlayfairDisplayItalic/PlayfairDisplayItalic", normal, italic);
 
+@include font-face("raleway", "../fonts/RalewayRegular/RalewayRegular");
+@include font-face("raleway", "../fonts/Montserrat-Bold/Montserrat-Bold", bold);
+@include font-face("raleway", "../fonts/RalewaySemiBold/RalewaySemiBold", 600);
