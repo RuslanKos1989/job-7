@@ -172,7 +172,35 @@ section, header{
 	background-position: center;
 }
 
-/* 3. Header
+/* 3. Buttons
+===========================*/
+
+.btn{
+	background-color: $blue;
+	color: white;
+	text-transform: uppercase;
+	font: bold .875rem montserrat;
+	padding: 1em 1.857em;
+	letter-spacing: .15em;
+	vertical-align: text-bottom;
+	&:hover{
+        background-color: lighten($blue, 15%);
+		} 
+    &:active{
+        background-color: darken($blue, 15%);
+	}
+
+}
+.read-more{
+	color: $blue;
+	font: 1rem montserrat;
+	border-bottom: 2px solid $blue;
+	&:hover{
+		border: none;
+	}
+}
+
+/* 4. Header
 ===========================*/
 
 .wave{
@@ -244,17 +272,74 @@ section, header{
 
 .main-slider{
 	display: flex;
+	justify-content: space-between;
 	position: relative;
+	height: 600px;
+	box-shadow: 3px 4px 20px 0px rgba(0, 0, 0, .34);
 	&__bg{
 		position: absolute;
-		right: 0;
-		top: 0;
+		right: -263px;
+    	bottom: 222.9px;
+		z-index: 0;
+
+		font: bold 7.938em montserrat;
+		letter-spacing: 10px;
+		color: rgba(0, 0, 0, .03);
+		transform: rotate(-90deg);
+		text-transform: uppercase;
 	}
 }
+
+.goods{
+	font-size: 1rem;
+	&__title{
+		margin-bottom: 1.563em;
+		margin-top: 2.5em;
+	}
+	&__h2{
+		font: bold 1.250em montserrat;
+		color: black;
+		text-transform: capitalize;
+	}
+	&__rang{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__icon{
+		font-size: .75em;
+		color: #939393;
+		&_gold{
+			color: #f2d800;
+		}
+	}
+	&__quan{
+		font: bold .75em montserrat;
+		color: #787878;
+		margin-left: .2em;
+	}
+	&__date{
+		font: .875em/2em montserrat;
+		color: white;
+		background-color: black;
+		padding: .357em .657em;
+	}
+	&__price-block{
+		margin: 2.188em 0 5em 0;
+	}
+	&__price{
+		font: bold 1.5em montserrat;
+		color: black;
+		margin-right: 1.2em;
+	}
+}
+
+
 .tabs{
 	display:inline-block;
 	font-size: 1rem;
-	
+	position: relative;
+    z-index: 4;
 	&__ul{
 		margin: 0;
 		padding: 0;
@@ -271,7 +356,7 @@ section, header{
 		display:block;
 		float:left;
 
-		font: bold .938em raleway;
+		font: 600 .938em raleway;
 		text-transform: uppercase;
 		letter-spacing: 0.6px;
 		padding: .5em 0em;
@@ -282,7 +367,7 @@ section, header{
 		}
 		&.active, &:hover{
 			color: black;
-			border-bottom: .313em solid $blue;
+			border-bottom: .188em solid $blue;
 		}
 	}
 	&__container{
@@ -291,6 +376,7 @@ section, header{
 	&__txt{
 		display: block;
 		font: 1em raleway;
+		padding-top: .875em;
 		color: #787878;
 		letter-spacing: 0.2px;
 	}
