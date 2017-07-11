@@ -58,4 +58,8 @@ $(function() {
 			}
 		}
 	});
+
+	$( '#my-slider2' ).sliderPro({
+
+	});
 });
