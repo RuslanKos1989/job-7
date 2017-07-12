@@ -195,3 +195,14 @@
 	background-image:initial;
 	line-height: 23px;
 }
+// Carousel fade transition
+.carousel-fade {
+	.carousel-item {
+		opacity: 0;
+		transition: opacity 1s linear;
+		
+		&.active {
+			opacity: 1;
+		}
+	}
+}

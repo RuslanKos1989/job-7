@@ -269,6 +269,10 @@ section, header{
 
 /* 4. Main-Slider
 ===========================*/
+.wrapper{
+	position: absolute;
+	top: -283px;
+}
 
 .main-slider{
 	display: flex;
@@ -401,6 +405,7 @@ section, header{
 		letter-spacing: 0.2px;
 	}
 }
+
 
 
 @import "media"; // Всегда в конце
