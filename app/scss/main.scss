@@ -269,6 +269,10 @@ section, header{
 
 /* 4. Main-Slider
 ===========================*/
+.wrapper{
+	position: absolute;
+	top: -283px;
+}
 
 .main-slider{
 	display: flex;
@@ -277,7 +281,7 @@ section, header{
 	// height: 600px;
 	box-shadow: 3px 4px 20px 0px rgba(0, 0, 0, .34);
 	padding: 2.5em 3.125em 3.125em 3.125em;
-	top: -283px;
+	// top: -283px;
 	&__bg{
 		position: absolute;
 		right: -263px;
@@ -354,7 +358,6 @@ section, header{
 	}
 }
 
-
 .tabs{
 	display:inline-block;
 	font-size: 1rem;
@@ -402,6 +405,7 @@ section, header{
 		letter-spacing: 0.2px;
 	}
 }
+
 
 
 @import "media"; // Всегда в конце

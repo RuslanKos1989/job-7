@@ -176,3 +176,33 @@
   color: $carousel-caption-color;
   text-align: center;
 }
+.carousel-control-next {
+    right: 55px;
+}
+.carousel-control-prev {
+    right: 95px;
+	left: initial;
+}
+.carousel-control-next, .carousel-control-prev {
+    top: 48px;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #f2d800;
+	opacity: 1;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+	background-image:initial;
+	line-height: 23px;
+}
+// Carousel fade transition
+.carousel-fade {
+	.carousel-item {
+		opacity: 0;
+		transition: opacity 1s linear;
+		
+		&.active {
+			opacity: 1;
+		}
+	}
+}

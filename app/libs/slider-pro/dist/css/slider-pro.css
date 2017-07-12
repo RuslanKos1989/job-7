@@ -827,3 +827,8 @@ a.sp-video:after {
 .slider-pro img.sp-layer {
 	border: none;
 }
+
+.sp-thumbnail{
+	margin-left: 0px!important;
+    margin-top: 0px!important;
+}
