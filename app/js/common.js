@@ -70,4 +70,27 @@ $(".carousel-control-next").on("click", function(){
 	func();
 });
 
+/* FancyBox  http://fancyapps.com/fancybox/3/docs/#setup */
+
+	$('.video-link').fancybox({
+        padding     : 0,
+        margin      : [30, 10, 30, 10], // Increase left/right margin
+        width: 1280,
+        height: 720,
+        afterClose: function(){                
+        },
+        afterLoad: function(){},
+        helpers : {
+            media: true
+        },
+        youtube : {
+            autoplay: 1,
+            wmode: 'opaque',
+            vq: 'hd720'                
+        },
+        vimeo : {
+            autoplay: 0
+        }
+    });
+
 });
