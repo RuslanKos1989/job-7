@@ -397,12 +397,15 @@ section, header{
 		padding-top: .625em;
 	}
 	&__txt{
-		display: block;
+		display: none;
 		font: 1em/1.5em raleway;
 		padding-top: .875em;
 		padding-right: 1.875em;
 		color: #787878;
 		letter-spacing: 0.2px;
+		&.active{
+			display: block;
+		}
 	}
 }
 

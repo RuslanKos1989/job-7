@@ -1,37 +1,18 @@
 $(function() {
 
-	jQuery.fn.lightTabs = function(options){
+/* Tabs */
 
-		var createTabs = function(){
-			tabs = this;
-			i = 0;
-			
-			showPage = function(i){
-				$(tabs).children("div").children("p").hide();
-				$(tabs).children("div").children("p").eq(i).show();
-				$(tabs).children("ul").children("li").removeClass("active");
-				$(tabs).children("ul").children("li").eq(i).addClass("active");
-			}
-								
-			showPage(0);				
-			
-			$(tabs).children("ul").children("li").each(function(index, element){
-				$(element).attr("data-page", i);
-				i++;                        
-			});
-			
-			$(tabs).children("ul").children("li").click(function(){
-				showPage(parseInt($(this).attr("data-page")));
-			});				
-		};		
-		return this.each(createTabs);
-	};
+	$('ul.tabs__ul').on('click', 'li:not(.active)', function() {
+		$(this)
+			.addClass('active').siblings().removeClass('active')
+			.closest('div.tabs').find('p.tabs__txt').removeClass('active').eq($(this).index()).addClass('active');
+	});
 
 
 
-	$("#tabs").lightTabs();
-	$("#tabs-2").lightTabs();
 
+	
+/* Slider (child-slider) */
 
 	$( '#my-slider' ).sliderPro({
 		width: 325,
