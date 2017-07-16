@@ -127,7 +127,7 @@ $(".carousel-control-next").on("click", function(){
 		else 
 			$("#js-next").removeAttr("disabled");
 		
-		console.log(current);
+		// console.log(current);
 	});
 
 });

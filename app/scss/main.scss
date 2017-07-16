@@ -12,20 +12,8 @@ Table of Content
 5. Main-Slider
 6. About Us
 7. Our Team
+8. Blog
 
-7. Our Focus
-8. Video
-9. Portfolio
-10. Our Team
-11. Statistic
-12. Work Steps
-13. Pricing Table
-14. Testimonials
-15. Why Select Us
-16. Blog
-17. Subscriebe
-18. Feedback
-19. Js-classes
 ===========================*/
 
 
@@ -501,14 +489,13 @@ section, header{
 .slider{
 	display: flex;
 	position: relative;
+	margin-bottom: 9.375rem;
 	&__wrap{
 		position: relative;
 		display: flex;
     	height: 400px;
 		overflow: hidden;
 		align-items: center;
-		margin-bottom: 100px;
-		
 	}
 	&__btn{
 		position: absolute;
@@ -636,6 +623,40 @@ section, header{
 			color: #d9d9d9;
 			margin-right: .357em;
 		}
+	}
+}
+
+/* 8. Blog
+===========================*/
+
+.blog-wrap{
+	text-align: center;
+	margin-bottom: 10.625rem;
+}
+.article-wrap{
+	display: flex;
+	justify-content: center;
+	margin: 2.188rem 0 3rem 0;
+}
+.article{
+	font-size: 1rem;
+	text-align: left;
+	display: block;
+	&-wrap .col-3{
+		padding-top: .7em;
+		padding-bottom: .7em;
+	}
+	&__txt{
+		font: 1em/1.5em raleway;
+		padding: 1.3em;
+		padding-right: .625em;
+		color: #787878;
+	}
+	&:hover{
+		box-shadow: 0 0 20px 5px rgba(0, 0, 0, .2);
+	}
+	&:hover .article__txt{
+		color: #0022ff;
 	}
 }
 
