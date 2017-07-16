@@ -93,4 +93,41 @@ $(".carousel-control-next").on("click", function(){
         }
     });
 
+/* Team carousel */
+
+	var itemWidth = $(".team").innerWidth(),
+		container = $(".slider__team"),
+		items     = $(".team"),
+		itemsLen  = items.length,
+		current   = 4;
+
+	$(".slider").find("button").on("click", function(){
+		var direction = $(this).attr("id");
+		
+		if(direction == "js-next"){
+			container.css({"left": "-=" + (itemWidth-20)});
+			current++;
+			$(items[current-1]).css("opacity", "1");
+			$(items[current-5]).css("opacity", "0");
+		}else if(direction == "js-prev"){
+			container.css({"left": "+=" + (itemWidth-20)});
+			current --;
+			$(items[current-4]).css("opacity", "1");
+			$(items[current]).css("opacity", "0");
+		}
+
+		if(current > 4)
+			$("#js-prev").removeAttr("disabled");
+		else
+			$("#js-prev").attr("disabled", "disabled");
+		
+		if(current == itemsLen){
+			$("#js-next").attr("disabled", "disabled");
+		}
+		else 
+			$("#js-next").removeAttr("disabled");
+		
+		console.log(current);
+	});
+
 });
