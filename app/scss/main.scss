@@ -13,7 +13,8 @@ Table of Content
 6. About Us
 7. Our Team
 8. Blog
-
+9. Vidgets
+10. Footer
 ===========================*/
 
 
@@ -416,6 +417,12 @@ section, header{
 	&_team{
 		top: 135px;
 	}
+	&_insta{
+		font-size: 5.625rem;
+		top: 0;
+		letter-spacing: 8px;
+    	line-height: 0.7;
+	}
 }
 .video{
 	background-image: url("../img/video.jpg");
@@ -660,6 +667,148 @@ section, header{
 	}
 }
 
+/* 9. Vidgets
+===========================*/
+.vidgets{
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.instagram{
+	position: absolute;
+	left: 0;
+	top: -312px;
+	z-index: 3;
+	&__vidget{
+		background-color: $blue;
+		width: 620px;
+		height: 690px;
 
+	}
+}
+.facebook{
+	font-size: 1rem;
+	background-color: #385490;
+	padding: 1.875em 3.125em 2.5em;
 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	&::after{
+		content: "";
+		position: absolute;
+		bottom: 0;
+		height: 50%;
+		width: 100%;
+		z-index: 1;	
+		background-color: #e5e5e5;
+	}
+	&__logo{
+		margin-bottom: 1.875em;
+	}
+}
+.fb-page{
+	position: relative;
+	width: 340px!important;
+
+	z-index: 5;
+}
+
+/* 10. Footer
+===========================*/
+
+.footer{
+	background-color: #000;
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+	margin-top: 3.75rem;
+	
+}
+.ftr-menu{
+	display: flex;
+	justify-content: flex-start;
+	font: .875rem raleway;
+	&__wrap{
+		display: flex;
+		flex-direction: column;
+		
+		&:first-child{
+			margin-right: 4.28em;
+		}
+	}
+	&__link{
+		text-transform: capitalize;
+		color: white;
+		margin-bottom: 1.642em;
+		&::before{
+			content: "\f012";
+			font-family: "FontAwesome";
+			color: #f2d800;
+			margin-right: 0.6em;
+		}
+		&:hover{
+			color: #f2d800;
+		}
+	}
+}
+.foot{
+	padding-top: 1.688rem;
+}
+.copy{
+	font: 600 .75rem raleway;
+	color: #4d4d4d;
+	margin-top: 2.250em;
+	&__link{
+		color: #4d4d4d;
+		&:hover{
+			color: $blue;
+		}
+	}
+}
+.subscriebe{	
+	font-size: 1rem;
+	display: flex;
+	flex-direction: column;
+	margin: 3.5em 1em 2.2em 5.7em;
+	&__name{
+		color: white;
+		font: 1em montserrat;
+		margin-bottom: .3em;
+	}
+	&__inputs{
+		position: relative;
+		max-width: 300px;
+	}
+	&__email{
+		font: .875em raleway;
+		background: #000 url(../img/input.png) no-repeat 0px 4px;
+		border: none;
+		border-bottom: 1px solid #4d4d4d;
+		padding-bottom: .643em;
+		padding-left: 1.786em;
+
+		color: #4d4d4d;
+		width: 100%;
+	}
+	&__submit{
+		background-color: $blue;
+		border: none;
+		border-radius: 50%;
+		color: white;
+		cursor: pointer;
+		padding-top: 2px;
+    	padding-bottom: 2px;
+
+		position: absolute;
+		right: 0;
+		top: 0;
+		&:hover{
+        background-color: lighten($blue, 15%);
+		} 
+    	&:active{
+        background-color: darken($blue, 15%);
+		}
+	}
+}
 @import "media"; // Всегда в конце
