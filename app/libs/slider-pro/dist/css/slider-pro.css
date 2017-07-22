@@ -11,6 +11,7 @@
 	margin: 0 auto;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
+	padding-right: 30%!important;
 }
 
 .sp-slides-container {

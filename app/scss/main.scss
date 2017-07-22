@@ -273,12 +273,12 @@ section, header{
 	margin-bottom: 1em;
 	&__bg{
 		position: absolute;
-		right: -263px;
-    	bottom: 222.9px;
+		right: -283px;
+    	bottom: 243.9px;
 		z-index: 0;
 
 		font: bold 7.938em montserrat;
-		letter-spacing: 10px;
+		letter-spacing: 16px;
 		color: rgba(0, 0, 0, .03);
 		transform: rotate(-90deg);
 		text-transform: uppercase;
@@ -291,7 +291,7 @@ section, header{
 		top:0;
 		left:0;
 		background: $blue;
-		background: linear-gradient(-49deg, white 785.7px, $blue 0);
+		background: linear-gradient(-50.8deg, white 785.7px, $blue 0);
 		z-index: 0;
 	}
 }
@@ -303,6 +303,9 @@ section, header{
 
 .goods{
 	font-size: 1rem;
+	&_pad{
+		padding-left: 5em;
+	}
 	&__title{
 		margin-bottom: 1.563em;
 	}
@@ -638,7 +641,7 @@ section, header{
 
 .blog-wrap{
 	text-align: center;
-	margin-bottom: 10.625rem;
+	margin-bottom: 20rem;
 }
 .article-wrap{
 	display: flex;
